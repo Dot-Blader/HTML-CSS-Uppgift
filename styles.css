@@ -1,0 +1,618 @@
+:root {
+    --brand-primary: #6366F1;
+    --success: #22C55E;
+    --White: #FFFFFF;
+    --Gray-100: #F3F6FF;
+    --Gray-300: #E2E5F1;
+    --Gray-500: #B4B7C9;
+    --Gray-600: #9397AD;
+    --Gray-700: #565973;
+    --Gray-800: #33354D;
+    --Gray-900: #0B0F19;
+    --area-width: 1296px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Manrope", sans-serif;
+}
+
+/*-Utility Classes-*/
+
+.Area {
+    background-color: var(--White);
+    width: 1920px;
+    justify-content: center;
+}
+
+#Nav {
+    background-color: var(--White);
+    height: 76px;
+}
+
+.Region {
+    width: var(--area-width);
+    margin-left: 312px;
+}
+
+.btn {
+    background-color: var(--brand-primary);
+    color: var(--White);
+    font-size: 16px;
+    height: 36px;
+    width: 140px;
+    border-radius: 10px;
+    border: none;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+
+    .btn:hover {
+        box-shadow: 0 0px 10px 0 lightgray, 0 0px 10px 0 lightgray;
+    }
+
+.FCC {
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+
+/*-NavBar Classes-*/
+
+.NavBar {
+    height: 76px;
+    display: flex;
+    padding-block: 1rem;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Silicon {
+    gap: 39px;
+    color: var(--Gray-800);
+    font-size: 16px;
+    font-weight: 800;
+    z-index: 1;
+}
+
+.NavElements {
+    gap: 2rem;
+    z-index: 1;
+}
+
+.DarkMode {
+    gap: 1rem;
+    color: var(--Gray-700);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+/*-Header Classes-*/
+
+.Header {
+    height: 800px;
+}
+
+.HeaderBG {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 0;
+}
+
+.HeaderIphones {
+    position: absolute;
+    top: 188px;
+    left: 862px;
+}
+
+.HeaderTitle {
+    width: 526px;
+    height: 328px;
+    position: absolute;
+    top: 224px;
+    left: 312px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.HeaderManage {
+    color: var(--Gray-900);
+    font-size: 56px;
+    font-weight: 900;
+}
+
+.HeaderWeOffer {
+    color: var(--Gray-700);
+    font-size: 18px;
+    font-weight: 400;
+    width: 85%;
+    margin-top: 20px;
+}
+
+.AppstoreGoogle {
+    align-content: initial;
+    gap: 24px;
+}
+
+.DiscMore {
+    position: absolute;
+    top: 768px;
+    left: 312px;
+}
+
+/*-Logos & Features Classes-*/
+
+.Logos {
+    width: var(--area-width);
+    height: 100px;
+    position: absolute;
+    top: 972px;
+    left: 312px;
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+}
+
+.Logo {
+    height: 100px;
+    width: 196px;
+    border: 2px solid var(--Gray-300);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    .Logo:hover {
+        box-shadow: 0 0px 10px 0 lightgray, 0 0px 10px 0 lightgray;
+    }
+
+.Features {
+    width: var(--area-width);
+    height: 684px;
+    position: absolute;
+    top: 1184px;
+    left: 312px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.AppFeatures {
+    width: 746px;
+    height: 640px;
+    display: flex;
+    flex-direction: column;
+}
+
+.AppFeatTitle {
+    color: var(--Gray-900);
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.AppFeatSub {
+    color: var(--Gray-600);
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 16px;
+}
+
+.AppFeatCards {
+    display: grid;
+    grid-template-columns: 345px 345px;
+    gap: 32px;
+    transform: translate(0, 56px);
+}
+
+.AppFeatCard {
+    width: 345px;
+    height: 118px;
+    display: flex;
+    gap: 24px;
+}
+
+.CardTexts {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.CardTitle {
+    color: var(--Gray-900);
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.CardSub {
+    color: var(--Gray-700);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/*-Slider Classes-*/
+
+#Slider {
+    background-color: var(--Gray-100);
+    height: 1077px;
+    position: absolute;
+    top: 1980px;
+}
+
+.SliderTitle {
+    color: var(--Gray-900);
+    font-size: 40px;
+    font-weight: 900;
+    width: 670px;
+    height: 52px;
+    position: absolute;
+    top: 80px;
+    left: 625px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.SliderImages {
+    width: 1184px;
+    height: 663px;
+    position: absolute;
+    top: 180px;
+    left: 368px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.SliderSub {
+    width: 646px;
+    height: 98px;
+    position: absolute;
+    top: 883px;
+    left: 642px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 900;
+    color: var(--Gray-900);
+    text-align: center;
+}
+
+.SliderSubSub {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--Gray-700);
+    text-align: center;
+}
+
+/*-Second Features Classes-*/
+
+.FeaturesGrid {
+    width: 1076px;
+    height: 1080px;
+    position: absolute;
+    top: 3169px;
+    left: 422px;
+    display: grid;
+    grid-template-columns: 538px 538px;
+    gap: 16px;
+}
+
+.FeaturesGridOne {
+    font-size: 32px;
+    font-weight: 900;
+    color: var(--Gray-900);
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    justify-content: center;
+}
+
+.FgridFlex {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--Gray-700);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.FeaturesGridTwo {
+    font-size: 32px;
+    font-weight: 900;
+    color: var(--Gray-900);
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    justify-content: center;
+}
+
+.FgridCards {
+    display: flex;
+    gap: 24px;
+}
+
+.FgridCard {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--Gray-700);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+#learnMore {
+    width: 159px;
+    height: 44px;
+}
+
+/*-Testimonials Classes-*/
+
+.Testimonials {
+    height: 542px;
+    position: absolute;
+    top: 4361px;
+    background-color: var(--Gray-100);
+}
+
+.TestRegion {
+    width: var(--area-width);
+    margin-left: 312px;
+    margin-top: 80px;
+    display: flex;
+    gap: 100px;
+}
+
+.ClientsAre {
+    width: 306px;
+    font-size: 40px;
+    font-weight: 900;
+    color: var(--Gray-900);
+}
+
+.tests {
+    display: flex;
+    gap: 24px;
+}
+
+.Quotes {
+    background-color: var(--brand-primary);
+    border-radius: 10px;
+    width: 44px;
+    aspect-ratio: 1;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    position: absolute;
+    top: 50px;
+    left: 742px;
+    box-shadow: 0 0px 10px 0 lightgray, 0 0px 10px 0 lightgray;
+}
+
+.Q2 {
+    left: 1182px;
+}
+
+.testBox {
+    display: flex;
+    flex-direction: column;
+    width: 416px;
+    height: 329px;
+    border-radius: 10px;
+    background-color: var(--White);
+    padding: 24px;
+    justify-content: space-between;
+    box-shadow: 0 0px 10px 0 lightgray, 0 0px 10px 0 lightgray;
+}
+
+.Paragraph {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--Gray-700);
+}
+
+.Profile {
+    display: flex;
+    gap: 16px;
+}
+
+.User {
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--Gray-900);
+}
+
+.UserSub {
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--Gray-600);
+}
+
+/*-FAQ Classes-*/
+
+.FAQ {
+    width: var(--area-width);
+    height: 600px;
+    position: absolute;
+    top: 5015px;
+    left: 312px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.FAQbox {
+    width: 417px;
+    height: 380px;
+    font-size: 32px;
+    font-weight: 900;
+    color: var(--Gray-900);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.FAQboxSub {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--Gray-700);
+}
+
+.FAQcontacts {
+    display: flex;
+    justify-content: space-between;
+}
+.FAQcontact {
+    width: 196px;
+    height: 166px;
+    border-radius: 10px;
+    box-shadow: 0 0px 10px 0 lightgray, 0 0px 10px 0 lightgray;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--Gray-700);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 16px;
+}
+.ContactFAQ1 {
+    background-color: transparent;
+    color: var(--brand-primary);
+    font-weight: 700;
+    font-size: 14px;
+    width: 103px;
+    height: 44px;
+    gap:0px;
+}
+.ContactFAQ2 {
+    background-color: transparent;
+    color: var(--success);
+    font-weight: 700;
+    font-size: 14px;
+    width: 103px;
+    height: 44px;
+    gap: 0px;
+}
+
+.Dragspel {
+    width: 746px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.DragspelKey {
+    width: 100%;
+    height: 68px;
+    border-radius: 10px;
+    box-shadow: 0 0px 10px 0 lightgray, 0 0px 10px 0 lightgray;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--Gray-900);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+}
+
+.DragspelKeyActive {
+    width: 746px;
+    height: 180px;
+    border-radius: 10px;
+    box-shadow: 0 0px 10px 0 lightgray, 0 0px 10px 0 lightgray;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--Gray-900);
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.ActiveKey {
+    display: flex;
+    justify-content: space-between;
+}
+.ActiveKeySub {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--Gray-700);
+}
+
+/*-Subscribe Classes-*/
+
+.Subscribe {
+    width: var(--area-width);
+    height: 222px;
+    background-color: var(--Gray-300);
+    display: flex;
+    padding: 100px;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 5727px;
+    left: 312px;
+    border-radius: 5px;
+}
+.SubscribeTitle {
+    display: flex;
+    color: var(--Gray-900);
+    font-size: 24px;
+    font-weight: 900;
+    width: 526px;
+    height: 78px;
+    gap: 32px;
+    align-items: center;
+}
+.emailInput {
+    width: 472px;
+    height: 52px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: var(--White);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#Email {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    border: none;
+    padding: 24px;
+}
+#Email::placeholder {
+    color: var(--Gray-500);
+    font-size: 16px;
+}
+.subBtn {
+    border-radius: 0%;
+    height: 52px;
+    position: absolute;
+    left: 1056px;
+    border-radius: 0px 10px 10px 0px;
+}
+.Footer {
+    width: 1920px;
+    height: 130px;
+    position: absolute;
+    top: 5949px;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--Gray-600);
+}
